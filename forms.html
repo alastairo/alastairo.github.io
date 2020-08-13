@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Forms</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant&family=Inter&family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1>Forms</h1>
+    <div class="container">
+      <form id="contact-form" action="/submit-form" method="POST">
+        <label for="contact-user">Name</label>
+        <input
+          id="contact-user"
+          class="form-control"
+          name="name"
+          type="text"
+          autofocus
+          autocomplete="name"
+          tabindex="1"
+          required
+        />
+
+        <label for="contact-email">Email</label>
+        <input
+          id="contact-email"
+          class="form-control"
+          name="email"
+          autocomplete="email"
+          type="email"
+          placeholder="name@example.com"
+          tabindex="2"
+          required
+        />
+
+        <label for="contact-address">Address</label>
+        <input id="contact-address" class="form-control" name="address" type="text" tabindex="3" />
+
+        <label for="contact-city">City</label>
+        <input
+          list="contact-city-choices"
+          id="contact-city"
+          class="form-control"
+          name="city"
+          type="text"
+          tabindex="4"
+          required
+        />
+        <datalist id="contact-city-choices">
+          <option value="Toronto"></option>
+          <option value="Vancouver"></option>
+          <option value="Ottawa"></option>
+          <option value="Calgary"></option>
+          <option value="Winnipeg"></option>
+        </datalist>
+
+        <label for="contact-postalcode">Postal Code</label>
+        <input
+          id="contact-postalcode"
+          class="form-control"
+          name="postalcode"
+          type="text"
+          tabindex="5"
+        />
+
+        <div class="row">
+          <div class="col form-group mt-4">
+            <label for="contact-inquiry">Inquiry: </label>
+            <div class="form-check form-check-inline">
+              <input
+                id="inquiry-choice-q"
+                class="form-check-input ml-3"
+                type="radio"
+                name="inquiry-choice"
+                value="Question"
+              />
+              <label class="form-check-label mr-2" for="inquiry-choice-q">Question</label>
+
+              <input
+                id="inquiry-choice-c"
+                class="form-check-input ml-3"
+                type="radio"
+                name="inquiry-choice"
+                value="Comment"
+              />
+              <label class="form-check-label" for="inquiry-choice-c">Comment</label>
+
+              <input
+                id="inquiry-choice-o"
+                class="form-check-input ml-3"
+                type="radio"
+                name="inquiry-choice"
+                value="Order Problem"
+              />
+              <label class="form-check-label" for="inquiry-choice-o">Order Problem</label>
+            </div>
+          </div>
+        </div>
+
+        <label hidden for="contact-orderno">Order #</label>
+        <input hidden id="contact-orederno" class="form-control" name="orderno" type="text" />
+
+        <textarea
+          id="contact-message"
+          class="form-control mt-3"
+          name="message"
+          rows="10"
+          tabindex="7"
+          placeholder="Tell us what your inquiry is..."
+        >
+        </textarea>
+
+        <div class="d-flex flex-row-reverse">
+          <input
+            class="btn btn-primary mt-3"
+            type="submit"
+            name="submit"
+            value="Submit"
+            tabindex="8"
+          />
+        </div>
+
+        <input hidden id="contact-alastair" name="alastair" type="text" value="Alastair" />
+      </form>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

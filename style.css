@@ -1,0 +1,355 @@
+/* Alastair Odhiambo
+Student ID: 145845194 */
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: #2a2728;
+  margin: 0;
+  font-family: 'Cormorant', serif;
+}
+
+header {
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  color: #c3ccd5;
+  background-color: #2a2728;
+  font-size: 1.1em;
+}
+
+#main-logo {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+}
+
+#search-wrapper input {
+  color: rgb(255, 217, 0);
+  background-color: #2a2728;
+  padding-left: 10px;
+  border: 1px solid #c3ccd5;
+}
+
+#search-wrapper button {
+  color: #c3ccd5;
+  background-color: #2a2728;
+  border: 1px transparent;
+}
+
+#user-options {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#user-options > i {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+main {
+  height: 100%;
+  display: flex;
+}
+
+#side-menu {
+  width: 70px;
+  padding-right: 5px;
+  background-color: rgb(255, 217, 0);
+  font-size: 25px;
+  right: 30px;
+  z-index: 600;
+  position: fixed;
+  box-shadow: 5px 5px 5px #2a272867;
+}
+
+#side-menu div {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#side-menu div p {
+  margin: 5px;
+  font-size: 0.7em;
+}
+
+main section {
+  flex: 1;
+  height: 100%;
+  background-color: #2a2728;
+  margin-right: 0;
+  overflow: auto;
+  display: grid;
+}
+
+#main-background {
+  font-family: 'Roboto Slab', serif;
+  color: #2a2728;
+  height: 800px;
+  width: 100%;
+  background-image: url(images/main-background-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 3;
+}
+
+#main-background p {
+  float: right;
+  margin-top: 100px;
+  margin-right: 40px;
+  font-size: 3em;
+}
+
+#category-header {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+  z-index: 500;
+  text-align: center;
+  font-size: 28px;
+  color: #c3ccd5;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-column: 1 / span 2;
+  grid-row: 3 / span 3;
+  z-index: 500;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.item-card-wrapper {
+  padding: 10px;
+}
+
+.item-card-image {
+  position: relative;
+}
+
+.item-card-image p {
+  color: #fff;
+  font-size: 15px;
+  border: 1px transparent;
+  padding: 0px 5px;
+  border-radius: 2px;
+}
+
+.item-card-wrapper:hover p {
+  color: rgb(255, 217, 0);
+}
+
+.item-card-wrapper:hover .item-card-price {
+  color: rgb(255, 217, 0);
+}
+
+.item-card-category {
+  color: #c3ccd5;
+}
+
+.item-card-price {
+  float: right;
+  font-size: 14px;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #c3ccd5;
+}
+
+a:hover {
+  color: rgb(255, 217, 0);
+}
+
+#side-menu a {
+  color: #2a2728;
+  font-size: 1.2em;
+}
+
+#menu {
+  margin-left: 10px;
+}
+
+#about-content {
+  max-height: 150px;
+  padding: 15px 40px;
+  background-color: rgb(255, 217, 0);
+  font-size: 30px;
+  z-index: 600;
+  position: fixed;
+  box-shadow: 5px 5px 5px #2a272867;
+}
+
+#about-content i {
+  float: right;
+}
+
+#about-content p {
+  margin-top: 40px;
+}
+
+/* Final Assessment */
+footer {
+  height: 300px;
+  color: #c3ccd5;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  margin-top: 150px;
+  grid-column: 1 / span 2;
+  grid-row: 7 / span 1;
+  justify-content: center;
+  display: flex;
+  flex-flow: wrap;
+}
+
+#footer-content {
+  flex: 3;
+  text-align: center;
+  padding-top: 40px;
+}
+
+#social-media {
+  display: flex;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.sm-icon {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+#copyright {
+  min-width: 300px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+#email-input {
+  flex: 1;
+  min-width: 300px;
+}
+
+#email-input form {
+  padding: 2em;
+  display: grid;
+  grid-template-columns: 3fr;
+  grid-gap: 15px;
+  align-items: center;
+}
+
+#email-input form label {
+  font-family: 'Cormorant', serif;
+  font-size: 1.3em;
+}
+
+#email-input input {
+  width: 100%;
+  padding: 0.2em;
+  font-size: 1.4em;
+  font-family: 'Cormorant', serif;
+  border: 1px solid rgb(206, 212, 218);
+  background-color: #2a2728;
+  color: rgb(255, 217, 0);
+}
+
+#email-input input:focus {
+  border-color: rgb(255, 217, 0);
+}
+
+#email-input input[type='submit'] {
+  width: 100%;
+  background-color: #c3ccd5;
+  color: #2a2728;
+  grid-column: 1 / 1;
+}
+
+#email-input input[type='submit']:hover,
+#email-input input[type='submit']:focus {
+  background-color: rgb(255, 217, 0);
+}
+
+/* Contact Us */
+
+#contact-content {
+  font-family: 'Roboto Slab', serif;
+  color: #c3ccd5;
+  height: 850px;
+  width: 100%;
+  grid-column: 1 / span 2;
+  margin-bottom: 150px;
+  padding: 30px;
+  font-size: 1.2em;
+}
+
+#contact-content form {
+  margin-top: 3em;
+  padding: 2em;
+  border: 3px solid rgb(255, 217, 0);
+
+  max-width: 600px;
+  min-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+#contact-content form label {
+  font-family: 'Cormorant', serif;
+  font-size: 1.5em;
+}
+
+#contact-content input {
+  width: 100%;
+  padding: 0.2em;
+  font-size: 1.4em;
+  font-family: 'Cormorant', serif;
+  border: 1px solid rgb(206, 212, 218);
+  background-color: #2a2728;
+  color: rgb(255, 217, 0);
+  min-width: 250px;
+}
+
+#contact-content input:focus {
+  border-color: rgb(255, 217, 0);
+}
+
+#contact-content input[type='submit'] {
+  width: 150px;
+  background-color: #c3ccd5;
+  color: #2a2728;
+}
+
+#contact-content input[type='submit']:hover,
+#contact-content input[type='submit']:focus {
+  background-color: rgb(255, 217, 0);
+}
+
+#contact-content textarea {
+  min-width: 300px;
+  width: 100%;
+  padding: 0.2em;
+  font-size: 1em;
+  font-family: 'Cormorant', serif;
+  border: 1px solid rgb(206, 212, 218);
+  background-color: #2a2728;
+  color: rgb(255, 217, 0);
+}

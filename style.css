@@ -206,7 +206,7 @@ footer {
   max-width: 1000px;
   margin: 0 auto;
   margin-bottom: 100px;
-  margin-top: 150px;
+  margin-top: 200px;
   grid-column: 1 / span 2;
   grid-row: 7 / span 1;
   justify-content: center;
@@ -352,4 +352,12 @@ footer {
   border: 1px solid rgb(206, 212, 218);
   background-color: #2a2728;
   color: rgb(255, 217, 0);
+}
+
+#radio-buttons {
+  vertical-align: center;
+}
+
+#contact-content input[type='radio'] {
+  width: 5px;
 }

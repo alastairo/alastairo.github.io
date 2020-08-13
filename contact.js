@@ -191,6 +191,11 @@ window.onload = function() {
 
   //Contact Page
 
-  var contactSelector = document.querySelector('#contact');
-  contactSelector.addEventListener('click', function() {});
+  var orderSelector = document.querySelector('#order-problem');
+  orderSelector.addEventListener('click', function() {
+    var orderSelector = document.querySelector('#order');
+    if (orderSelector.hasAttribute('hidden')) {
+      orderSelector.hidden = false;
+    } else orderSelector.hidden = true;
+  });
 };

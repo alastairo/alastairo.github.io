@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>WEB222 Store</title>
+    <title>OASIS</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link
       rel="stylesheet"
@@ -119,9 +119,9 @@
                 required
               />
             </div>
-            <div>
+            <div id="radio-buttons">
               <div>
-                <input type="radio" id="" name="choice" value="question" checked />
+                <input type="radio" id="" name="choice" value="question" checked tabindex="6"/>
                 <label for="question">Question</label>
               </div>
 
@@ -132,13 +132,13 @@
 
               <div>
                 <input type="radio" id="order-problem" name="choice" value="order-problem" />
-                <label for="oreder-problem">Order Problem</label>
+                <label for="order-problem">Order Problem</label>
               </div>
             </div>
 
-            <div>
-              <label hidden for="contact-orderno">Order #</label>
-              <input hidden id="contact-orederno" class="form-control" name="orderno" type="text" />
+            <div hidden id="order">
+              <label for="contact-orderno">Order #</label>
+              <input id="contact-orderno" class="form-control" name="orderno" type="text" />
             </div>
 
               <textarea
@@ -196,7 +196,7 @@
                 type="email"
                 placeholder="name@example.com"
               />
-              <input type="submit" name="submit" value="Subscribe" tabindex="5" />
+              <input type="submit" name="submit" value="Subscribe"/>
             </form>
           </div>
         </footer>
